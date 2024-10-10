@@ -42,7 +42,7 @@ def main():
         graph_type = st.selectbox("Select Graph Type", 
                                   ['Total Tests vs. Jobs', 'Tests Run per Build'])
         
-        rawData = pd.read_csv('FATbucketPassFailsOpenLiberty20230302.csv')
+        rawData = pd.read_csv('FATbucketPassFails.csv')
         
         if graph_type == 'Total Tests vs. Jobs':
             # Add widgets for 'Total Tests vs. Jobs'
